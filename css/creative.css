@@ -105,7 +105,6 @@ aside {
 .navbar-default .navbar-header .navbar-brand:focus {
     color: #eb3812;
 }
-
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
@@ -129,7 +128,15 @@ aside {
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
-
+@media(max-width:393px){
+    a.navbar-brand{
+        padding:15px 5px;
+        font-size: 15px;
+    }
+    button.navbar-toggle.collapsed{
+        margin-right: 5px;
+    }
+}
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
